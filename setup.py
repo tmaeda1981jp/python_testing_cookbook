@@ -10,17 +10,31 @@ except ImportError:
 
 from setuptools import setup
 
+# setup(
+#     name="RegexPicker plugin",
+#     version="0.1",
+#     author="tmaeda1981jp",
+#     author_email="tmaeda1981jp at gmail",
+#     description="Pick test methods based on a regular expression",
+#     license="Apache Server Licence 2.0",
+#     py_modules=["recipe13_plugin"],
+#     entry_points = {
+#         'nose.plugins': [
+#             'recipe13_plugin = recipe13_plugin:RegexPicker'
+#         ]
+#     }
+# )
 setup(
-    name="RegexPicker plugin",
+    name="CSV report plugin",
     version="0.1",
     author="tmaeda1981jp",
     author_email="tmaeda1981jp at gmail",
-    description="Pick test methods based on a regular expression",
+    description="Generate CSV report",
     license="Apache Server Licence 2.0",
-    py_modules=["recipe13_plugin"],
+    py_modules=["recipe14_plugin"],
     entry_points = {
         'nose.plugins': [
-            'recipe13_plugin = recipe13_plugin:RegexPicker'
+            'recipe14_plugin = recipe14_plugin:CsvReport'
         ]
     }
 )
